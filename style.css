@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+#landingBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+[data-color]{
+    color: #FFC736;
+}
+
+#icon{
+    margin-left: -35px;
+}
+
+#txt{
+    color: rgb(215, 214, 214);
+    text-shadow: -2px -2px 5px rgb(255, 145, 0);
+}
+
+#spedometer{
+    background-image: url("https://cdn-thumbs.imagevenue.com/9e/ab/b7/ME17K7P3_t.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
+
+
+
+/* Home screen btns */
+#btnE {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 0.3s;
+    background-color: #FFC736;
+    overflow: hidden;
+    border-radius: 5px;
+    /* box-shadow: inset 10px 10px 10px 10px #ffc229a0; */
+}
+
+#btnE:hover {
+    color: rgb(7, 7, 7);
+}
+
+#btnE::after {
+    content: 'Lets Go!';
+    color: white;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -56px;
+    transform: skewX(0deg);
+    background-color: #000000;
+    z-index: 1;
+    transition: all 0.6s;
+}
+
+/* USE :hover */
+#btnE:hover::after{
+    width: 150%;
+}
